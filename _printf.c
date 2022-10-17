@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 {
 	int (*func)(va_list, flags_t *);
 	const char *ptr;
-	va_list arguments;
+	va_list args;
 	flags_t flags = {0, 0, 0};
 	register int index = 0;
 
@@ -49,4 +49,9 @@ int _printf(const char *format, ...)
 	_putchar(-1);
 	va_end(args);
 	return (index);
+}
+
+int main(void)
+{
+	return (0);
 }
