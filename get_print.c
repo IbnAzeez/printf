@@ -12,7 +12,7 @@
 int (*get_print(char s))(va_list, flags_t *)
 {
 	phand func_arr[] = {
-		{'i', print_int},
+	/*	{'i', print_int},
 		{'s', print_string},
 		{'c', print_char},
 		{'d', print_int},
@@ -23,9 +23,9 @@ int (*get_print(char s))(va_list, flags_t *)
 		{'o', print_octal},
 		{'R', print_rot13},
 		{'r', print_rev},
-		{'S', print_bigS},
+		{'S', print_bigS}, */
 		{'p', print_address},
-		{'%', print_percent} 
+	/*	{'%', print_percent} */
 	};
 
 	int flags = 14;

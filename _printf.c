@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 {
 	int (*func)(va_list, flags_t *);
 	const char *ptr;
-	va_list args;
+	va_list arguments;
 	flags_t flags = {0, 0, 0};
 	register int index = 0;
 
