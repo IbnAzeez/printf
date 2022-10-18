@@ -41,7 +41,6 @@ int print_bigS(va_list l, flags_t *f)
 	return (count);
 }
 
-
 /**
  * print_rev - prints a string in reverse
  * @l: argument from _printf
@@ -61,8 +60,11 @@ int print_rev(va_list l, flags_t *f)
 	while (s[i])
 		i++;
 
-	for (j = i - 1; j >= 0; j--)
+	j = i - 1;
+
+	while (j >= 0)
 		_putchar(s[j]);
+		j--;
 
 	return (i);
 }
