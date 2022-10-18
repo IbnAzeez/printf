@@ -9,18 +9,18 @@
  */
 int print_address(va_list l, flags_t *f)
 {
-	char *str;
-	unsigned long int ptr = va_arg(l, unsigned long int);
+	char *s;
+	unsigned long int x = va_arg(l, unsigned long int);
 
-	register int index = 0;
+	register int c = 0;
 
 	(void)f;
 
-	if (!ptr)
+	if (!x)
 		return (_puts("(nil)"));
 	
-	str = convert(ptr, 16, 1);
-	index += _puts("0x");
-	index += _puts(str);
-	return (index);
+	s = convert(x, 16, 1);
+	c += _puts("0x");
+	c += _puts(s);
+	return (c);
 }

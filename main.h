@@ -13,7 +13,7 @@
  */
 typedef struct flags
 {
-	int plus;
+	int add_sign;
 	int whitespace;
 	int hash;
 } flags_t;
@@ -30,11 +30,11 @@ typedef struct printHandler
 	int (*f)(va_list ap, flags_t *f);
 } phand;
 
-/* print_nums 
+/* print_nums*/
 int print_int(va_list l, flags_t *f);
 void print_number(int n);
 int print_unsigned(va_list l, flags_t *f);
-int count_digit(int i); */
+int count_digit(int i);
 
 /* print_bases */
 int print_hex(va_list l, flags_t *f);

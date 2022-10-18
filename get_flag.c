@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * get_flag - turns on flags if _printf finds
- * any flag modifier
+ * get_flag - turns on flags if _printf finds modifier
  * @s: character that holds the flag specifier
- * @f: pointer to the struct flags in which we turn the flags on
+ * @f: pointer to struct flags
  * Return: 1 if a flag has been turned on, 0 otherwise
  */
 int get_flag(char s, flags_t *f)
@@ -14,7 +13,7 @@ int get_flag(char s, flags_t *f)
 	switch (s)
 	{
 		case '+':
-			f->plus = 1;
+			f->add_sign = 1;
 			i = 1;
 			break;
 		case ' ':
