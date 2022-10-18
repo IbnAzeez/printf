@@ -19,7 +19,7 @@ int (*get_print(char s))(va_list, flags_t *)
 		{'u', print_unsigned},
 		{'x', print_hex},
 	/*	{'X', print_hex_big},*/
-	/*	{'b', print_binary}, */
+		{'b', print_binary}, 
 		{'o', print_octal},
 	/*	{'R', print_rot13}, */
 		{'r', print_rev},
@@ -28,7 +28,7 @@ int (*get_print(char s))(va_list, flags_t *)
 		{'%', print_percent}
 	};
 
-	int flags = 10;
+	int flags = 11;
 
 	register int i;
 
