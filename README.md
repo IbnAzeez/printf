@@ -1,1 +1,1 @@
-_printf.c produces output according to a format.
+_printf.c produces output according to a format input
