@@ -18,7 +18,7 @@ int print_address(va_list l, flags_t *f)
 
 	if (!x)
 		return (_puts("(nil)"));
-	
+
 	s = convert(x, 16, 1);
 	c += _puts("0x");
 	c += _puts(s);
