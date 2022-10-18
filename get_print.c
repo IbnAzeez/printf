@@ -29,6 +29,7 @@ int (*get_print(char s))(va_list, flags_t *)
 	};
 
 	int flags = 10;
+
 	register int i;
 
 	i = 0;
