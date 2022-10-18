@@ -19,11 +19,11 @@ int (*get_print(char s))(va_list, flags_t *)
 		{'u', print_unsigned},
 		{'x', print_hex},
 		{'X', print_hex_big},
-		{'b', print_binary}, 
+		{'b', print_binary},
 		{'o', print_octal},
 	/*	{'R', print_rot13}, */
 		{'r', print_rev},
-		{'S', print_bigS},b
+		{'S', print_bigS}, b
 		{'p', print_address},
 		{'%', print_percent}
 	};
