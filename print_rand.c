@@ -66,7 +66,7 @@ int print_rev(va_list l, flags_t *f)
 
 	while (j >= 0)
 		_putchar(s[j]);
-	j--;
+		j--;
 
 	return (i);
 }
