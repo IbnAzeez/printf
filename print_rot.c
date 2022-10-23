@@ -23,11 +23,10 @@ int print_rot13(va_list l, flags_t *f)
 		else
 		{
 			i = 0;
-			while (i <= 52)
+			for (i = 0; i <= 52; i++)
 			{
 				if (str[j] == rot13[i])
 					_putchar(ROT13[i]);
-			i++;
 			}
 		}
 	}
