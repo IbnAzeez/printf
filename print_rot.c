@@ -16,7 +16,7 @@ int print_rot13(va_list l, flags_t *f)
 
 	(void)f;
 
-	for (j = 0; str[j] j++)
+	for (j = 0; str[j]; j++)
 	{
 		if (str[j] < 'A' || (str[j] > 'Z' && str[j] < 'a') || str[j] > 'z')
 			_putchar(str[j]);
